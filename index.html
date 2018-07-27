@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RCG</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+</head>
+<body>
+<div>
+  <form class="form-horizontal">
+  <fieldset>
+
+  <!-- Title -->
+  <legend>RCG - random character generator</legend>
+
+  <!-- Sex -->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="sex">Sexo</label>
+    <div class="col-md-4">
+    <div class="radio">
+      <label for="sex-0">
+        <input name="sex" id="sex-0" value="1" checked="checked" type="radio">
+        Masculino
+      </label>
+    </div>
+    <div class="radio">
+      <label for="sex-1">
+        <input name="sex" id="sex-1" value="2" type="radio">
+        Femenino
+      </label>
+    </div>
+    </div>
+  </div>
+
+  <div class="accordion" id="charaAccordion">
+
+    <!-- Body -->
+    <div class="card">
+      <!--legend-->
+      <div class="card-header" id="headingOne">
+        <h5 class="mb-0">
+          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Cuerpo
+          </button>
+        </h5>
+      </div>
+      <!-- body -->
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#charaAccordion">
+        <div class="card-body">
+          <!-- Body Type -->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="bodyType">Forma de Cuerpo</label>
+            <div class="col-md-4">
+              <select id="bodyType" name="bodyType" class="form-control">
+                <option value="1">Trapecio</option>
+                <option value="2">Triangulo</option>
+                <option value="3">Triangulo Invertido</option>
+                <option value="4">Rectángulo</option>
+                <option value="5">Circulo</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- IMC -->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="imc">Indice de masa corporal</label>
+            <div class="col-md-4">
+              <select id="imc" name="imc" class="form-control">
+                <option value="1">Enflaquecido</option>
+                <option value="2">Normal</option>
+                <option value="3">Sobrepeso</option>
+                <option value="4">Obeso</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skin -->
+    <div class="card">
+      <!--legend-->
+      <div class="card-header" id="headingTwo">
+        <h5 class="mb-0">
+          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Piel
+          </button>
+        </h5>
+      </div>
+      <!-- body -->
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#charaAccordion">
+        <div class="card-body">
+          <!-- Skin Color -->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="skintone">Color de piel</label>
+            <div class="col-md-4">
+              <select id="skintone" name="skincolor" class="form-control">
+                <option value="1">Blanco Rosa</option>
+                <option value="2">Blanco Crema</option>
+                <option value="3">Blanco Oliva</option>
+                <option value="4">Negro Rojizo</option>
+                <option value="5">Negro Marrón</option>
+                <option value="6">Negro Oscuro</option>
+                <option value="7">Amarillo Rosa</option>
+                <option value="8">Amarillo Blanco</option>
+                <option value="9">Amarillo Pardo</option>
+                <option value="10">Rojo Rosa</option>
+                <option value="11">Rojo Amarillo</option>
+                <option value="12">Rojo Oliva</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Marks -->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="mark">Marcas</label>
+            <div class="col-md-4">
+            <div class="checkbox">
+              <label for="mark-0">
+                <input name="mark" id="mark-0" value="1" type="checkbox">
+                Ninguna
+              </label>
+            </div>
+            <div class="checkbox">
+              <label for="mark-1">
+                <input name="mark" id="mark-1" value="2" type="checkbox">
+                Pecas
+              </label>
+            </div>
+            <div class="checkbox">
+              <label for="mark-2">
+                <input name="mark" id="mark-2" value="3" type="checkbox">
+                Lunares
+              </label>
+            </div>
+            <div class="checkbox">
+              <label for="mark-3">
+                <input name="mark" id="mark-3" value="4" type="checkbox">
+                Marcas de Nacimiento
+              </label>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Face -->
+    <div class="card">
+      <!--legend-->
+      <div class="card-header" id="headingThree">
+        <h5 class="mb-0">
+          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Rostro
+          </button>
+        </h5>
+      </div>
+      <!-- body -->
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#charaAccordion">
+        <div class="card-body">
+          <!-- Face Shape -->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="faceShape">Forma de Cara</label>
+            <div class="col-md-4">
+              <select id="faceShape" name="faceShape" class="form-control">
+                <option value="1">Alargado</option>
+                <option value="2">Cuadrado</option>
+                <option value="3">Redondo</option>
+                <option value="4">Ovalado</option>
+                <option value="5">Triangulo</option>
+                <option value="6">Triangulo invertido</option>
+                <option value="7">Diamante</option>
+                <option value="8">Rectángulo</option>
+                <option value="9">Corazón</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Eyes -->
+    <div class="card">
+      <!--legend-->
+      <div class="card-header" id="headingFour">
+        <h5 class="mb-0">
+          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            Ojos
+          </button>
+        </h5>
+      </div>
+      <!-- body -->
+      <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#charaAccordion">
+        <div class="card-body">
+          <!-- Heterocromia -->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="heterocrom">Heterocromía</label>
+            <div class="col-md-4">
+              <label class="checkbox-inline" for="heterocrom-0">
+                <input name="heterocrom" id="heterocrom-0" value="1" type="checkbox">
+                .
+              </label>
+            </div>
+          </div>
+
+          <!-- EyesColor -->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="eyesColor">Color de ojos</label>
+            <div class="col-md-4">
+              <select id="eyesColor" name="eyesColor" class="form-control">
+                <option value="1">Rosa</option>
+                <option value="2">Gris</option>
+                <option value="3">Violeta</option>
+                <option value="4">Celeste</option>
+                <option value="5">Azul</option>
+                <option value="6">Verde</option>
+                <option value="7">Verde Oliva</option>
+                <option value="8">Pardo</option>
+                <option value="9">Café</option>
+                <option value="10">Café Oscuro</option>
+                <option value="11">Negro</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Eyes Color 2 -->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="eyesColor2">Color de ojos 2</label>
+            <div class="col-md-4">
+              <select id="eyesColor2" name="eyesColor2" class="form-control">
+                <option value="1">Rosa</option>
+                <option value="2">Gris</option>
+                <option value="3">Violeta</option>
+                <option value="4">Celeste</option>
+                <option value="5">Azul</option>
+                <option value="6">Verde</option>
+                <option value="7">Verde Oliva</option>
+                <option value="8">Pardo</option>
+                <option value="9">Café</option>
+                <option value="10">Café Oscuro</option>
+                <option value="11">Negro</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  </fieldset>
+  </form>
+</div>
+</body>
+</html>
