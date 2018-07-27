@@ -1,0 +1,33 @@
+{
+  "name": "randomcharactergenerator",
+  "version": "1.0.0",
+  "description": "Written description of random or semi-random generater characters for artist and rol players based on racial characteristics or fantasy characteristics.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabu-lartiga/RandomCharacterGenerator.git"
+  },
+  "keywords": [
+    "charactergenerator",
+    "randomoverlord",
+    "gabuLart",
+    "web"
+  ],
+  "author": "Gabu Lartiga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabu-lartiga/RandomCharacterGenerator/issues"
+  },
+  "homepage": "https://github.com/gabu-lartiga/RandomCharacterGenerator#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0"
+  }
+}
